@@ -1,5 +1,10 @@
 {
     "start": "Привет! Я Chattiye!",
     "no_members": "Не могу получить участников",
-    "error": "Ошибка: {error}"
+    "error": "Ошибка: {error}",
+    "choose_language": "Выберите язык",
+    "language_set": "Язык установлен: {lang_name}",
+    "start_command": "Запустить бота",
+    "everyone_command": "Упомянуть всех участников",
+    "language_command": "Выбрать язык"
 }

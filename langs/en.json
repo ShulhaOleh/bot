@@ -1,5 +1,10 @@
 {
     "start": "Hello, I'm Chattiye!",
     "no_members": "Can't get members",
-    "error": "Error: {error}"
+    "error": "Error: {error}",
+    "choose_language": "Choose your language",
+    "language_set": "Language set to: {lang_name}",
+    "start_command": "Start the bot",
+    "everyone_command": "Mention all members",
+    "language_command": "Choose language"
 }
