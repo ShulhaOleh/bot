@@ -73,18 +73,29 @@ async def tg_start(update, context):
 # Teg everyone (/everyone)
 async def everyone(update: Update, context: ContextTypes.DEFAULT_TYPE):
     lang = get_user_lang(update)
-
     chat = update.effective_chat
+
     try:
         admins = await context.bot.get_chat_administrators(chat.id)
-        members = [f"@{admin.user.username}" for admin in admins if admin.user.username]
+
+        members = []
+        for admin in admins:
+            user = admin.user
+            if user.is_bot or user.id == context.bot.id:
+                continue
+            if user.username:
+                members.append(f"@{user.username}")
+            else:
+                members.append(user.first_name or str(user.id))
+
         if members:
             text = " ".join(members)
             await update.message.reply_text(text)
         else:
             await update.message.reply_text(LOCALES[lang]["no_members"])
     except Exception as e:
-        await update.message.reply_text(LOCALES[lang]["error"])
+        text = LOCALES[lang].get("error", "Error: {error}").format(error=e)
+        await update.message.reply_text(text)
 
 # ===== Change language ===== (/language)
 async def choose_language(update, context):
