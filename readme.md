@@ -1,4 +1,6 @@
-[English (ENG)](readme.md) • [Українська (UKR)](readme.uk.md) • [Русский (RUS)](readme.ru.md)
+[![ENG](https://img.shields.io/badge/lang-English-red)](readme.md)
+[![UKR](https://img.shields.io/badge/lang-Ukrainian-green)](docs/readme.uk.md)
+[![RUS](https://img.shields.io/badge/lang-Russian-blue)](docs/readme.ru.md)
 
 # Chattiye Bot
 
@@ -54,6 +56,7 @@ bot/
 │   ├── en.json
 │   ├── ru.json
 │   └── uk.json
+├── LICENSE
 └── README.md
 ```
 
@@ -95,3 +98,7 @@ The bot will start polling updates. Add it to a Telegram group and use the comma
 * User language preferences are stored in memory and reset on bot restart
 * The `/everyone` command works only for group administrators, not all participants
 * The bot needs proper permissions to access the list of chat administrators
+
+## License
+
+This project is licensed under the MIT [License](LICENSE) — see the LICENSE file for details.

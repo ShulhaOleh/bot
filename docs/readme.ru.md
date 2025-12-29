@@ -1,4 +1,6 @@
-[English (ENG)](readme.md) • [Українська (UKR)](readme.uk.md) • [Русский (RUS)](readme.ru.md)
+[![ENG](https://img.shields.io/badge/lang-English-red)](../readme.md)
+[![UKR](https://img.shields.io/badge/lang-Ukrainian-green)](readme.uk.md)
+[![RUS](https://img.shields.io/badge/lang-Russian-blue)](readme.ru.md)
 
 # Chattiye Bot
 
@@ -51,6 +53,7 @@ bot/
 │   ├── en.json
 │   ├── ru.json
 │   └── uk.json
+├── LICENSE
 └── README.md
 ```
 
@@ -89,3 +92,7 @@ python main.py
 - Языковые предпочтения пользователей хранятся в памяти и сбрасываются при перезапуске бота
 - Команда `/everyone` работает только с администраторами группы, а не со всеми участниками
 - Боту нужны соответствующие разрешения для доступа к списку администраторов чата
+
+## Лицензия
+
+Этот проект лицензируется по лицензии MIT [Лицензия](../LICENSE) — подробности см. в файле LICENSE.
